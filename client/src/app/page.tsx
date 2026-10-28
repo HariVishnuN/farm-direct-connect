@@ -10,7 +10,7 @@ export default function Home() {
 
   const fetchFarms = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/farms');
+      const res = await fetch('https://farm-direct-backend-4yus.onrender.com/api/farms');
       const data = await res.json();
       setFarms(data);
     } catch (err) {
